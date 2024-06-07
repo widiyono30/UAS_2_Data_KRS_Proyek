@@ -1,0 +1,168 @@
+INFO - 2024-05-06 16:13:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-06 16:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-06 17:56:08 --> mysqli_sql_exception: Unknown column 'krs.nama_semester' in 'on clause' in C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\web_krs\app\Models\Krs_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\web_krs\app\Controllers\Krs.php(13): App\Models\Krs_model->getKrsjoin()
+#6 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\web_krs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\web_krs\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-05-06 17:56:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'krs.nama_semester' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`', [], false)
+ 2 APPPATH\Models\Krs_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(13): App\Models\Krs_model->getKrsjoin()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 17:56:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'krs.nama_semester' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`', [], false)
+ 4 APPPATH\Models\Krs_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Krs.php(13): App\Models\Krs_model->getKrsjoin()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 17:56:08 --> [Caused by] mysqli_sql_exception: Unknown column 'krs.nama_semester' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `krs`
+JOIN `kode_semester` ON `kode_semester`.`id_kode`=`krs`.`semester`
+JOIN `data_semester` ON `data_semester`.`id_semester`=`krs`.`nama_semester`', [], false)
+ 5 APPPATH\Models\Krs_model.php(23): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Krs.php(13): App\Models\Krs_model->getKrsjoin()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 18:27:08 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Views\krs_view.php on line 23.
+ 1 APPPATH\Views\krs_view.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 18:46:01 --> ErrorException: Undefined array key "data_semester.nama_semester"
+in APPPATH\Views\krs_view.php on line 30.
+ 1 APPPATH\Views\krs_view.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_semester.nama_semester"', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 18:54:52 --> ErrorException: Attempt to read property "id_krs" on array
+in APPPATH\Views\krs_view.php on line 32.
+ 1 APPPATH\Views\krs_view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_krs" on array', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 18:55:27 --> Error: Call to a member function result() on array
+in APPPATH\Controllers\Krs.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 18:56:51 --> ErrorException: Attempt to read property "id_krs" on array
+in APPPATH\Views\krs_view.php on line 32.
+ 1 APPPATH\Views\krs_view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_krs" on array', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 19:02:16 --> ErrorException: Attempt to read property "id_krs" on array
+in APPPATH\Views\krs_view.php on line 32.
+ 1 APPPATH\Views\krs_view.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_krs" on array', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 32)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 19:03:25 --> ErrorException: Attempt to read property "id_krs" on array
+in APPPATH\Views\krs_view.php on line 26.
+ 1 APPPATH\Views\krs_view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_krs" on array', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(15): view('krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-06 19:09:57 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\Krs_model.php on line 21.
+ 1 APPPATH\Controllers\Krs.php(12): App\Models\Krs_model->getKrs()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')

@@ -1,0 +1,415 @@
+INFO - 2024-03-23 16:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:08:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:08:22 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:08:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:08:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:08:22 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:09:53 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:09:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:09:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:09:53 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:20:41 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:20:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:20:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:20:41 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:29:51 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:29:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:29:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:29:51 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:42:04 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:42:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:42:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:42:04 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:45:04 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:45:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:45:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:45:04 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:49:57 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:49:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:49:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:49:57 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-03-23 16:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-23 16:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-23 16:54:07 --> mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Login->auth()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#10 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-23 16:54:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:54:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-23 16:54:07 --> [Caused by] mysqli_sql_exception: Table 'id21932813_data_krs.users' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Login.php(21): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Login->auth()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

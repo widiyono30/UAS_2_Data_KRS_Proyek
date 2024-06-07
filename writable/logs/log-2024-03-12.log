@@ -1,0 +1,225 @@
+ERROR - 2024-03-12 15:36:49 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Krs->add()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-12 15:36:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:36:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:36:49 --> [Caused by] mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 15:38:41 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Krs->add()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-12 15:38:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:38:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:38:41 --> [Caused by] mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 15:39:36 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Krs->add()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-12 15:39:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:39:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:39:36 --> [Caused by] mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 15:40:16 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Krs->add()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-12 15:40:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:40:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:40:16 --> [Caused by] mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-12 15:41:33 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(306): mysqli->query()
+#1 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+#4 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/app/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+#6 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(941): App\Controllers\Krs->add()
+#7 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+#8 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/vendor/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+#9 /storage/ssd3/813/21932813/public_html/tugas-kelompok5/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-12 15:41:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 3 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 4 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:41:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 311.
+ 1 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 4 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 5 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 6 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-12 15:41:33 --> [Caused by] mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 306.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(306): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/Krs_model.php(21): CodeIgniter\Database\BaseBuilder->insert()
+ 6 APPPATH/Controllers/Krs.php(37): App\Models\Krs_model->saveKrs()
+ 7 SYSTEMPATH/CodeIgniter.php(941): App\Controllers\Krs->add()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

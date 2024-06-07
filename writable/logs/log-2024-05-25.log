@@ -1,0 +1,23 @@
+CRITICAL - 2024-05-25 10:44:54 --> ErrorException: Undefined variable $isi
+in APPPATH\Views\lihat_krs_view.php on line 45.
+ 1 APPPATH\Views\lihat_krs_view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $isi', 'C:\\xampp\\htdocs\\web_krs\\app\\Views\\lihat_krs_view.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\web_krs\\app\\Views\\lihat_krs_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('lihat_krs_view', [], true)
+ 5 APPPATH\Controllers\Krs.php(63): view('lihat_krs_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->lihat('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
+CRITICAL - 2024-05-25 10:56:44 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\lihat_krs_view.php on line 45.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('lihat_krs_view', [], true)
+ 4 APPPATH\Controllers\Krs.php(63): view('lihat_krs_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Krs->lihat('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\web_krs\\public\\index.php')
